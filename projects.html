@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/71eb76c76a.js" crossorigin="anonymous"></script>
+        <title>Mari's Portfolio page</title>
+    </head>
+
+    <body>
+
+        <!--Container for popup windows. Called by the function openPopup(), hidden by default.-->
+        <div class="popup_container" id="popup"></div>
+
+        <header>
+            <nav>
+                <a class="nav-link" href="index.html">Minusta</a>
+                <a class="nav-link active" href="projects.html">Projektit</a>
+                <a class="nav-link" href="repositories.html">Repositoryt</a>
+            </nav>
+            <div class="icons">
+                <i class="fa-brands fa-github fa-2xl"></i>
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+            </div>
+        </header>
+
+        <main>
+            <section class="main_row column">
+                    <h1>Projektit, joita ei löydy GitHub-portfoliosta</h1>
+                    <p class="normal_p">
+                        Minulla on yksi käynnissä oleva, koulun ulkopuolinen projekti, frisbeegolfarin sovellus <span class="accent">FribaGo</span>, josta löytyy esittely alempaa.
+                    </p>
+                    <p class="normal_p">
+                        Lisäksi esittelen muutaman kouluprojektin. Ne on toteutettu koulun tarjoamalla palvelimella, jonka kanssa GitHub ei toimi. Voin toimittaa projektiin tuottamaani koodia tarvittaessa.
+                    </p>
+                    <p class="normal_p">
+                        Alla on tiivistelmät projekteista. <span class="accent">Lue lisää</span> -linkkien takaa löytyvät yksityiskohtaisemmat selostukset projekteista ja osuuksistani niihin sekä kuvia lopputuloksesta.
+                    </p>
+            </section>
+
+            <!-- FRIBAGO -->
+            <section class="project_box row">
+                <figure class="project_img">
+                    <a href="https://www.fribago.com" target="_blank"><img class="project_logo" src="images/fribago_logo.png" alt="FribaGo-logo"></a>
+                </figure>
+                <div class="about_txt">
+                    <p class="info_p">
+                        <span class="accent">FribaGo</span> on opiskelukaverini ajatuksesta lähtenyt <span class="accent">web-pohjainen frisbeegolfarin sovellus</span>, jonka avulla voi muun muassa kirjata frisbeegolf-tuloksia, pelata yksin tai toisten rekisteröityneiden palaajien kanssa, tavallisesti tai parikilpailuna, hakea ohjelmaan syötettyjä frisbeegolf-ratoja ja lisätä ratoja pelattavaksi.
+                    </p>
+                    <p class="info_p">
+                        Päävastuualueinani ovat olleet FribaGon <span class="accent">Hae rata -hakukoneen toteutus</span> sekä <span class="accent">sivuston väritys ja ulkoasu</span>. Hakukonetta pääsee käyttämään ilman kirjautumista.
+                    </p>
+                    <p class="info_p">
+                        Tässä projektissa käyttämäni tekniikat ja kielet: <span class="accent">Jira, Figma, HTML, CSS, JavaScript (jQuery), Ajax, PHP ja MySQL</span>.
+                    </p>
+                    <button type="button" class="open_popup" onclick="openPopup('fribago')">Lue lisää</button>
+                </div>
+            </section>
+
+            <!-- KIRJANPITÄJÄ -->
+            <section class="project_box row">
+                <figure class="project_img">
+                    <img class="project_logo" src="images/kirjanpitaja_logo.png" alt="Kirjanpitäjä-logo">
+                </figure>
+                <div class="about_txt">
+                    <p class="info_p">
+                        <span class="accent">Kirjanpitäjä</span> on syksyllä 2023 koulun asiakasprojektina toteutettu kirjanpito-ohjelman osa.
+                    </p>
+                    <p class="info_p">
+                        Tiimini osa-alue oli <span class="accent">tositteet ja niiden hallinta</span>. Suunnittelimme ja toteutimme web-pohjaisen ohjelman alusta asti itse.
+                    </p>
+                    <p class="info_p">
+                        Vastuullani oli toteuttaa <span class="accent">organisaation hallinta -sivu</span>. Sivulta voi lisätä ohjelmaan uusia organisaatioita, muokata niiden tietoja ja valita organisaatio, jonka tositteita käsitellään.
+                    </p>
+                    <p class="info_p">
+                        Tässä projektissa käyttämäni tekniikat ja kielet: <span class="accent">Scrum, Jira, Confluence, Figma, HTML, CSS, JavaScript (jquery), PHP ja MySQL</span>.
+                    </p>
+                    <p class="info_p">
+                        DesignFactoryProject-kurssin arvosana: 5 (5 ECTS)
+                    </p>
+                    
+                    <button type="button" class="open_popup" onclick="openPopup('kirjanpitaja')">Lue lisää</button>
+                </div>
+            </section>
+
+            <section class="project_box row">
+                <figure class="project_img">
+                    <img class="project_logo" src="images/line_logo.png" alt="Ravintola Line -logo">
+                </figure>
+                <div class="about_txt">
+                    <p class="info_p">
+                        <span class="accent">Ravintola Line</span> on kuvitteellisen ravintolan kotisivu. Sivuston suunnittelu ja toteutus aloitettiin ryhmätyönä Staattisen verkkosivun rakentaminen -kurssilla (HTML & CSS) ja sitä jatkettiin web-ohjelmointi-kurssilla (JavaScript, PHP & MySQL). Lisäksi Sisällönhallintajärjestelmät-kurssilla toteutettiin vastaavan näköinen sivusto toimintoineen WordPressin avulla. Kurssit ajoittuivat kevääseen 2023.
+                    </p>
+                    <p class="info_p">
+                        Tässä projektissa käyttämäni tekniikat ja kielet: <span class="accent">Planner, Figma, HTML, Bootstrap, CSS, Wave, JavaScript (jquery), PHP, MySQL, WordPress</span>.
+                    </p>
+                    <p class="info_p">
+                        Staattisen verkkosivun rakentaminen -kurssin arvosana: 5 (4 ECTS)<br>
+                        Web-ohjelmointi-kurssin arvosana: 5 (5 ECTS)<br>
+                        Sisällönhallintajärjestelmät- kurssin arvosana: 5 (3 ECTS)
+                    </p>
+                    <button type="button" class="open_popup" onclick="openPopup('line')">Lue lisää</button>
+                </div>
+            </section>
+        </main>
+        
+        <script src="JSFiles/popup.js"></script>
+    </body>
+</html>
