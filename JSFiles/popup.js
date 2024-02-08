@@ -5,6 +5,7 @@ function openPopup(x) {
                     '<div class="close_popup_bar">' +
                         '<button class="close_popup" onclick="closePopup()">X</button>' +
                     '</div>' +
+                    '<div class="img_gallery_container" id="gallery"></div>' +
                     '<section class="popup_content column">';
     var end = '</section></section>'
 
@@ -45,6 +46,11 @@ function openPopup(x) {
                             '<p class="info_p">' +
                                 'Suunnittelin FribaGon ulkoasun <span class="accent">Figmalla</span>. Väreiksi valikoituivat musta, valkoinen, harmaan eri sävyt sekä minttu. Loppuvuodesta 2023 julkaistiin myös testiryhmässä toivottu <span class="accent">vaalea teema</span>, jonka suunnittelu ja toteutus on pääosin minun käsialaani. Tällä hetkellä vaalea teema on tiukasta aikataulusta johtuen toteutettu vain muuttamalla tumman teeman värejä. Tavoitteenani on kehittää teemoja omiin suuntiinsa mahdollisimman selkeiksi ja silmää miellyttäviksi kokonaisuuksiksi.</p>';
         
+        var images1 =       '<section class="img_container row">' +
+                                    '<img src="images/fribago_figma_dark.jpg" class="gallery_img_double" alt="Fribago Figma tumman teeman design" onclick="openGallery(1.11)">' +
+                                    '<img src="images/fribago_figma_light.jpg" class="gallery_img_double" alt="Fribago Figma vaalean teeman design" onclick="openGallery(1.12)">' +
+                            '</section>';
+
         var part3 =         '<h3>Hakukone</h3>' +
                             '<p class="info_p">' +
                                 'Olen toteuttanut FribaGoon <span class="accent">Hae rata</span> -hakukoneen. Se hakee ratoja tietokannasta, jonne sovellukseen syötetyt frisbeegolfradat tallennetaan. Hakukone on toteutettu <span class="accent">jQueryn</span> ja <span class="accent">Ajaxin</span> avulla, jolloin erillistä hakunappia ei tarvita. Hakutulokset päivittyvät, kun jokin hakukriteeri muuttuu.' +
@@ -55,8 +61,14 @@ function openPopup(x) {
                             '<p class="info_p">' +
                                 'Hakutulokset tulevat näkyviin linkkeinä, jotka johtavat radan sivulle. Sitä kautta pääsee aloittamaan kierroksen kyseisellä radalla. Hakukonetta pääsee käyttämään kirjautumatta, mutta pelaamiseen vaaditaan rekisteröityminen.' +
                             '</p>';
+                        
+        var images2 =       '<section class="img_container row">' +
+                                '<img src="images/fribago_search_dark.jpg" class="gallery_img_double" alt="Fribago Hae Rata -hakukone tumma teema" onclick="openGallery(1.21)">' +
+                                '<img src="images/fribago_search_light.jpg" class="gallery_img_double" alt="Fribago Hae rata -hakukone vaalea teema" onclick="openGallery(1.22)">' +
+                            '</section>' +
+                        '</section>';
 
-        var content = start + header + summary + part1 + part2 + part3 + end;
+        var content = start + header + summary + part1 + part2 + images1 + part3 + images2 + end;
     }
 
     /* Popup content for Kirjanpitäjä */
@@ -69,7 +81,7 @@ function openPopup(x) {
         summary =       '<section class="column">' +
                             '<h2>Yleistä Design Factory Projectista</h2>' +
                             '<p class="info_p">' +
-                                'Design Factory Project -kurssi oli kokonaisvaltainen harjoitus <span class="accent">tiimityöskentelystä asiakasprojektissa</span>. Tarkoitus oli rakentaa pienyrittäjille tarkoitettu jotain kirjanpidon osa-aluetta hoitava kevytsovellus tai sen käyttöliittymäsuunnitelma. Sovelluksen tuli olla mahdollisimman selkeä, helppokäyttöinen ja käyttäjää ohjaava. Toimeksiantaja oli Taloushallinnon Ratkaisutoimisto Oikia. Projektin kesto oli kahdeksan viikkoa.' +
+                                'Design Factory Project -kurssi oli kokonaisvaltainen harjoitus <span class="accent">tiimityöskentelystä asiakasprojektissa</span>. Tarkoitus oli rakentaa pienyrittäjille tarkoitettu jotain kirjanpidon osa-aluetta hoitava kevytsovellus tai sen käyttöliittymäsuunnitelma. Sovelluksen tuli olla mahdollisimman selkeä, helppokäyttöinen ja käyttäjää ohjaava. Toimeksiantaja oli <span class="accent">Taloushallinnon Ratkaisutoimisto Oikia</span>. Projektin kesto oli kahdeksan viikkoa.' +
                             '</p>' +
                             '<p class="info_p">' +
                                 'Seitsemänhenkisen tiimini osa-alue oli <span class="accent">tositteet ja niiden hallinta</span>. Päätimme toteuttaa toimivan web-pohjaisen sovelluksen tositteiden tallentamiseen ja käsittelyyn käyttämällä <span class="accent">HTML:ää, CSS:ää, JavaScriptiä, PHP:tä sekä MySQL:ää</span>. Toteutimme projektin koulun tarjoamalla palvelimella.' +
@@ -85,22 +97,34 @@ function openPopup(x) {
                                     'Uuden organisaation lisääminen tapahtuu lomakkeen kautta. Lomake ohjaa käyttäjää esimerkiksi Y-tunnuksen ja tilinumeron oikean muodon osalta, eikä tietoja voi tallentaa virheellisessä muodossa. Yrityksen tiedot tallentuvat tietokantaan, ja niihin pääsee käsiksi vain käyttäjä, joka tiedot on syöttänyt.' +
                                 '</p>';
 
+        images1 =           '<section class="img_container row">' +
+                                '<img src="images/kirjanpitaja_lisaa.jpg" class="gallery_img_single" alt="Kirjanpitäjän Lisää organisaatio -lomake" onclick="openGallery(2.11)">' +
+                            '</section>';
+
         part3 =             '<h3>Organisaation tietojen muokkaus</h3>' +
                             '<p class="info_p">' +
                                 'Muokkaa organisaatiota -välilehdellä on alasvetovalikko, johon haetaan tietokannasta kaikkien kirjautuneen käyttäjän hallitsemien organisaatioiden nimet. Valikosta valitun organisaation tietokantaan tallennetut tiedot haetaan Lisää organisaatio -lomaketta vastaavalle lomakkeelle. Tietoja voi muokata, ja muokatut tiedot tallentuvat tietokantaan ylikirjoittaen vanhat tiedot.' +
                             '</p>';
+
+        images2 =           '<section class="img_container row">' +
+                                '<img src="images/kirjanpitaja_muokkaa.jpg" class="gallery_img_single" alt="Kirjanpitäjän Muokkaa organisaatiota -lomake" onclick="openGallery(2.12)">' +
+                            '</section>';
 
         var part4 =         '<h3>Organisaation valinta</h3>' +
                             '<p class="info_p">' +
                                 'Valitse organisaatio -välilehdeltä pääsee valitsemaan organisaation, jonka tositteita haluaa käsitellä. Alasvetovalikkoon haetaan tietokannasta kaikkien käyttäjän hallitsemien organisaatioiden nimet. Valitun organisaation tiedot aukeavat valikon alle, jotta voidaan varmistua, että ollaan valitsemassa oikeaa organisaatiota. Halutun organisaation valinta vahvistetaan painikkeesta, ja valitun organisaation nimi tulee näkyviin yläpalkkiin. Tästä eteenpäin kaikki syötetyt/muokatut/poistetut tositteet kirjataan tämän organisaation kirjanpitoon. Jos käyttäjällä on vain yksi organisaatio, se on automaattisesti valittuna käyttäjän sisäänkirjautumisesta lähtien.' +
                             '</p>';
 
+        images3 =           '<section class="img_container row">' +
+                                '<img src="images/kirjanpitaja_valitse.jpg" class="gallery_img_single" alt="Kirjanpitäjän Valitse organisaatio -toiminto" onclick="openGallery(2.13)">' +
+                            '</section>';
+
         var more =         '<h2>Lisää projektista</h2>' +
                             '<p class="info_p">' +
                                 'Projekti oli haastava koitos, sillä koulutuksen puolesta meillä ei ollut valmiuksia toteuttaa sovellusta tässä mittakaavassa. Tiimin jäsenillä oli harrastuneisuutta ja opiskelimme uutta itsenäisesti projektin edetessä. Sovimme tiimin kanssa jo alkuvaiheessa, että asetamme tavoitteen korkealle ja pyrimme toetuttamaan mahdollisimman käyttövalmiin sovelluksen.' +
                             '</p>' +
                             '<p class="info_p">' +
-                                'Ensimmäiseksi perehdyimme pienyritysten kirjanpidon lakeihin, säädöksiin ja tositteisiin. Lisäksi selvitetimme asiakkaalta, mitkä ominaisuudet koettiin tärkeimmiksi. Tiukan aikataulun vuoksi oli priorisoitava toteutettavia toimintoja ja ominaisuuksia.' +
+                                'Ensimmäiseksi perehdyimme pienyritysten kirjanpidon lakeihin, säädöksiin ja tositteisiin. Lisäksi selvitimme asiakkaalta, mitkä ominaisuudet koettiin tärkeimmiksi. Tiukan aikataulun vuoksi oli priorisoitava toteutettavia toimintoja ja ominaisuuksia.' +
                             '</p>' +
                             '<h3>Responsiivisuus</h3>' +
                             '<p class="info_p">' +
@@ -111,11 +135,11 @@ function openPopup(x) {
                                 'Projekti toteutettiin Scrumia käyttäen. Suunnittelimme sprintit (3 kpl) ja pidimme kirjaa projektin vaiheista Jirassa. Suunnittelupalaverit, dailyt, reviewit ja retrospektiivit kirjasimme Confluenceen. Toimin Scrum masterina yhden sprintin ajan. Harjoituksen vuoksi vaihdoimme Scrum masterin jokaiseen sprinttiin.' +
                             '</p>' +
                             '<p class="info_p">' +
-                                'Asiakkaan edustaja oli paikalla review-tilaisuuksissa. Nämä tapaamiset olivat kullan arvoisia, sillä niissä saimme tarkennuksia ja palautetta, joiden perusteella pystyimme kehittämään sovellusta asiakkaan toivomaan suuntaan. Palaute oli alusta asti rakentavaa ja sen avulla pystyimme toteuttamaan tositteiden käsittelyyn sovelluksen, johon asiakas oli tyytyväinen.' +
+                                'Asiakkaan edustaja oli paikalla review-tilaisuuksissa. Nämä tapaamiset olivat kullan arvoisia, sillä niissä saimme tarkennuksia ja palautetta, joiden perusteella pystyimme kehittämään sovellusta asiakkaan toivomaan suuntaan. Palaute oli alusta asti positiivista ja rakentavaa. Sen avulla pystyimme toteuttamaan tositteiden käsittelyyn sovelluksen, johon asiakas oli tyytyväinen.' +
                             '</p>' +
                         '</section>';
 
-        var content = start + header + summary + part1 + part2 + part3 + part4 + more + end;
+        var content = start + header + summary + part1 + part2 + images1 + part3 + images2 + part4 + images3 + more + end;
     }
 
     /* Popup content for Ravintola Line */
@@ -139,6 +163,10 @@ function openPopup(x) {
                                 'Kiinnitimme erityistä huomiota kurssin aiheina olleisiin saavutettavuuteen, responsiivisuuteen, semanttiseen koodiin sekä koodin selkeyteen ja kommentointiin. Kommentoinnin tärkeys korostui projektissa, jossa useampi henkilö käsitteli samoja koodeja.' +
                             '</p>';
 
+        images1 =           '<section class="img_container row">' +
+                                '<img src="images/line_figma.jpg" class="gallery_img_single" alt="Ravintola Linen ulkoasusuunnitelma" onclick="openGallery(3.10)">' +
+                            '</section>';                   
+
         part2 =             '<h3>Päävastuualueeni: Pöytävaraus-sivu</h3>' +
                             '<p class="info_p">' +
                                 'Toteutin pöytävaraussivulle lomakkeen, jonka kautta voi varata pöydän haluamanaan ajankohtana valitsemalleen henkilömäärälle. Toiminnallisuuksia ei toteutettu.' +
@@ -159,6 +187,9 @@ function openPopup(x) {
                             '<p class="info_p">' +
                                 'Lomake on toteutettu HTML:llä, toiminnallisuudet JavaScriptillä ja tietokannan hallinta PHP:lla. Lisäksi tein muutamia pieniä, mutta käteviä JavaScript-koodeja: mm. lomakkeille syötettyjen pilkkujen muuttaminen pisteiksi tietokantaa varten ja toisinpäin Menu-sivun ruokalistaan sekä määrittely, mihin kenttään kursori sijoittuu sivun latauduttua.' +
                             '</p>';
+        images2 =           '<section class="img_container row">' +
+                                '<img src="images/line_php_admin_lisaa.jpg" class="gallery_img_single" alt="Ruokalajien lisäys -lomake" onclick="openGallery(3.20)">' +
+                            '</section>';
 
         var part5 =         '<h3>Päävastuualueeni: Menu-sivun hallinta</h3>' +
                             '<p class="info_p">' +
@@ -176,6 +207,10 @@ function openPopup(x) {
                                 'Menu-sivulla on käytetty kuvapalveluista löytyneitä ilmaisia kuvia. Olen rajannut ja käsitellyt kuvat sopiviksi Photopea-ohjelmalla.' +
                             '</p>';
 
+        var images3 =       '<section class="img_container row">' +
+                                '<img src="images/line_php_ruokalista.jpg" class="gallery_img_single" alt="Menu-sivu" onclick="openGallery(3.30)">' +
+                            '</section>';
+
         var part7 =         '<h2>Sisällönhallintajärjestelmät</h2>' +
                             '<p class="info_p">' +
                                 'Tällä kurssilla tutustuimme WordPressiin. Tavoitteena oli laatia mahdollisimman saman näköinen sivusto kuin aiemmissa vaiheissa tehty luomalla valmiista teemasta lapsiteema ja käyttää plugineja toiminnallisuuksien toteutukseen.' +
@@ -191,17 +226,18 @@ function openPopup(x) {
                                 'Toteutin Pöytävaraussivun lomakkeen Forminator-pluginilla. Varausten käsittelyä varten asennettiin wpDataTables-plugin ja siihen lisäosana wpDataTables integration for Forminator Forms -plugin. Varauksen lähettämisen jälkeen asiakas saa sähköpostiinsa tervetulotoivotuksen ja varauksen tiedot. Varausten tiedot listautuvat myös taulukkoon WordPressin Dashboardiin. Taulukosta näkee kaikki varaukset tietoineen.</p><p class="info_p">Kuten aikaisemmassakin vaiheessa, kiinnitimme huomiota responsiivisuuteen. Huolehdin pöytävaraussivun responsiivisuuden toimivaksi.' +
                             '</p>'
 
-        var part10 =        '<h3>Päävastuualueeni: Yhteystiedot-sivun kartta</h3>' +
+        var part10 =        '<h3>Päävastuualueeni: Yhteystiedot-sivu</h3>' +
                             '<p class="info_p">' +
                                 'Yhteystiedot-sivulla oleva kartta on toteutettu WP Map Block -pluginilla.' +
                             '</p>' +
                         '</section>';
         
-        content = start + header + summary + part1 + part2 + part3 + part4 + part5 + part6 + part7 + part8 + part9 + part10 + end;
+        content = start + header + summary + part1 + part2 + images1 + part3 + part4 + images2 + part5 + part6 + images3 + part7 + part8 + part9 + part10 + end;
     }
 
-    else content = "<h1>Jokin meni pieleen.</h1>";
+    else content = "<h1>Härö</h1>";
 
+    var gallery = '<section class="gallery_container" id=x></section>'
 
     document.querySelector('#popup').innerHTML = content;
     document.querySelector('#popup').style.display = "block";
@@ -211,3 +247,14 @@ function openPopup(x) {
 function closePopup() {
     document.querySelector('#popup').style.display = "none";
 }
+
+function openGallery(x) {
+
+    if (x === 1.1) {
+
+    }
+    else if (x === 1.2) {
+
+    }
+}
+
