@@ -63,8 +63,7 @@ function openPopup(x) {
                             '</p>';
                         
         var images2 =       '<section class="img_container row">' +
-                                '<img src="images/fribago_search_dark.jpg" class="gallery_img_double" alt="Fribago Hae Rata -hakukone tumma teema" onclick="openGallery(1.21)">' +
-                                '<img src="images/fribago_search_light.jpg" class="gallery_img_double" alt="Fribago Hae rata -hakukone vaalea teema" onclick="openGallery(1.22)">' +
+                                '<img src="images/fribago_search_dark.jpg" class="gallery_img_single" alt="Fribago Hae Rata -hakukone tumma teema" onclick="openGallery(1.21)">' +
                             '</section>' +
                         '</section>';
 
