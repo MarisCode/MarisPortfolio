@@ -111,7 +111,7 @@ h5 {
 
 /* Yleisiä muotoiluja */
 .normal_p {
-    padding: 0.8em 8em 0.8em 0;
+    padding: 0.8em 5em 0.8em 0;
     font-size: 1.2em;
     line-height: 1.5em;
 }
@@ -149,19 +149,20 @@ h5 {
 /* About me -sivu (index) */
 
 .about_me_txt {
-    width: 75%;
+    width: 50%;
     padding-top: 1em;
 }
 
 .portrait_container {
-    width: 35%;
+    width: 40%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    margin-left: 7%;
 }
 
 .portrait {
-    width: 100%;
+    width: 60%;
     border-radius: 50%;
     box-shadow: -1px -1px 20px 2px rgba(255, 153, 0, 0.35), 1px 1px 20px 2px rgba(255, 153, 0, 0.36);
     transform: scaleX(-1);
