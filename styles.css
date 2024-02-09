@@ -190,6 +190,11 @@ h5 {
     border-radius: 5px;
 }
 
+.project_logo_bigger {
+    height: 10em;
+    border-radius: 50%;
+}
+
 .about_txt {
     width: 60%;
     border-radius: 15px;
