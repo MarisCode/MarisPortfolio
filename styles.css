@@ -190,9 +190,10 @@ h5 {
     border-radius: 5px;
 }
 
-.project_logo_bigger {
-    height: 10em;
-    border-radius: 50%;
+.project_logo_portfolio {
+    height: 5.5em;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px 0.5px #000, -0.5px -0.5px 2px 0.5px #000, -1px -1px 20px 2px rgba(255, 153, 0, 0.35), 1px 1px 20px 2px rgba(255, 153, 0, 0.36);
 }
 
 .about_txt {
