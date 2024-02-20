@@ -31,8 +31,27 @@ function openPopup(x) {
                                 '<span class="accent">fribago.com</span>' +
                             '</p>' +
                         '</blockquote>' +
+                        '<section class="popup_nutshell column">' +
+                            '<h2>FribaGo pähkinänkuoressa</h2>' +
+                            '<ul class="nutshell">' +
+                                '<li>Tulosten kirjaaminen</li>' +
+                                '<li>Tuloskorttien tallentaminen</li>' +
+                                '<li>Kaveritoiminto</li>' +
+                                '<li>Pelaaminen yksin tai kavereiden kanssa</li>' +
+                                '<li>Parikisa</li>' +
+                                '<li>Suppea tilastointi (Monipuolinen tilastointi tulossa)</li>' +
+                                '<li>Ratojen lisääminen sivustolle</li>' +
+                                '<li>Ratojen ja layoutien hallinta</li>' +
+                                '<li>Väyläkuvien lisääminen valokuvana tai piirtoeditorilla</li>' +
+                                '<li>Hae rata -hakukone</li>' +
+                                '<li>Oman profiilin hallinta</li>' +
+                                '<li>Monipuoliset yksityisyysasetukset</li>' +
+                                '<li>Admin-hallintasivut</li>' +
+                                '<li>Tumma ja vaalea teema</li>' +
+                            '</ul>' +
+                        '</section>' +
                         '<section class="column">' +
-                            '<h2>FribaGo</h2>' +
+                            '<h2>FribaGon tarina</h2>' +
                             '<p class="info_p">' +
                                 'FribaGo-projekti alkoi keväällä 2023, kun opiskelukaverini kyseli halukkaita frisbeegolf-sovelluksen kehittämiseen. Tarkoituksena oli saada kesälle koodailtavaa tuntuman ylläpitämiseksi. Alkutunnustelujen jälkeen FribaGoa jäi työstämään neljä opiskelijaa, ja työ jatkuu saman tiimin voimin edelleen. Tällä hetkellä FribaGo on testausvaiheessa muutaman kymmenen lajin harrastajan avustuksella. FribaGo-työryhmä on tiiviisti yhteydessä testiryhmään, ja sovellusta pyritään parantamaan toiveiden mukaan.' +
                             '</p>';
