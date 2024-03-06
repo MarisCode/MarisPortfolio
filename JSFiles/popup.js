@@ -21,18 +21,18 @@ function openPopup(x) {
         var summary =   '<blockquote class="popup_quote" cite="https://www.fribago.com">' +
                             '<section class="column quote_wrap">' +
                                 '<p class="quote_p">' +
-                                    'FribaGo.com on frisbeegolfarin sivusto, jonka tarkoituksena on tarjota uusi vaihtoehto frisbeegolf kierrosten tulosten kirjaamiseen ja tilastointiin.' +
+                                    '<a href="https://www.fribago.com" target="_blank" class="txt_link">FribaGo.com</a> on frisbeegolfarin sivusto, jonka tarkoituksena on tarjota uusi vaihtoehto frisbeegolf kierrosten tulosten kirjaamiseen ja tilastointiin.' +
                                 '</p>' +
                                 '<p class="quote_p">' +
                                     'FribaGon päätavoitteena on tulosten kirjaamisen helppous ja pelaajan kehityksen seuranta erilaisia tilastoja tarjoamalla. Toinen tärkeä tavoite on kerätä radoista tietoa helpottamaan pelaamista käyttäjälle uusilla radoilla.' +
                                 '</p>' +
                             '</section>' +
                             '<p class="source_p">' +
-                                '<span class="accent">fribago.com</span>' +
+                                '<a href="https://www.fribago.com" target="_blank" class="txt_link">fribago.com</a>' +
                             '</p>' +
                         '</blockquote>' +
                         '<section class="popup_nutshell column">' +
-                            '<h2>FribaGo pähkinänkuoressa</h2>' +
+                            '<h2><a href="https://www.fribago.com" target="_blank" class="txt_link">FribaGo</a> pähkinänkuoressa</h2>' +
                             '<ul class="nutshell">' +
                                 '<li>Tulosten kirjaaminen</li>' +
                                 '<li>Tuloskorttien tallentaminen</li>' +
@@ -51,14 +51,14 @@ function openPopup(x) {
                             '</ul>' +
                         '</section>' +
                         '<section class="column">' +
-                            '<h2>FribaGon tarina</h2>' +
+                            '<h2><a href="https://www.fribago.com" target="_blank" class="txt_link">FribaGon</a> tarina</h2>' +
                             '<p class="info_p">' +
-                                'FribaGo-projekti alkoi keväällä 2023, kun opiskelukaverini kyseli halukkaita frisbeegolf-sovelluksen kehittämiseen. Tarkoituksena oli saada kesälle koodailtavaa tuntuman ylläpitämiseksi. Alkutunnustelujen jälkeen FribaGoa jäi työstämään neljä opiskelijaa, ja työ jatkuu saman tiimin voimin edelleen. Tällä hetkellä FribaGo on testausvaiheessa muutaman kymmenen lajin harrastajan avustuksella. FribaGo-työryhmä on tiiviisti yhteydessä testiryhmään, ja sovellusta pyritään parantamaan toiveiden mukaan.' +
+                                '<a href="https://www.fribago.com" target="_blank" class="txt_link">FribaGo</a>-projekti alkoi keväällä 2023, kun opiskelukaverini kyseli halukkaita frisbeegolf-sovelluksen kehittämiseen. Tarkoituksena oli saada kesälle koodailtavaa tuntuman ylläpitämiseksi. Alkutunnustelujen jälkeen FribaGoa jäi työstämään neljä opiskelijaa, ja työ jatkuu saman tiimin voimin edelleen. Tällä hetkellä FribaGo on <span class="accent">testausvaiheessa</span> muutaman kymmenen lajin harrastajan avustuksella. FribaGo-työryhmä on tiiviisti yhteydessä testiryhmään, ja <span class="accent">sovellusta pyritään parantamaan toiveiden mukaan.</a>' +
                             '</p>';
         
         var part1 =         '<h2>Päävastuualueeni</h2>' +
                             '<p class="info_p">' +
-                                'Päävastuualueinani ovat olleet FribaGon <span class="accent">sivuston väritys ja ulkoasu</span> sekä <span class="accent">Hae rata -hakukoneen toteutus</span>. Lisäksi olen osallistunut aktiivisesti eri toimintojen suunnitteluun.' +
+                                'Päävastuualueinani ovat olleet <span class="accent">sivuston väritys ja ulkoasu</span> sekä <span class="accent">Hae rata -hakukoneen toteutus</span>. Lisäksi olen osallistunut aktiivisesti eri toimintojen suunnitteluun.' +
                             '</p>';
         
         var part2 =         '<h3>Ulkoasu</h3>' +
@@ -72,7 +72,7 @@ function openPopup(x) {
 
         var part3 =         '<h3>Hakukone</h3>' +
                             '<p class="info_p">' +
-                                'Olen toteuttanut FribaGoon <span class="accent">Hae rata</span> -hakukoneen. Se hakee ratoja tietokannasta, jonne sovellukseen syötetyt frisbeegolfradat tallennetaan. Hakukone on toteutettu <span class="accent">jQueryn</span> ja <span class="accent">Ajaxin</span> avulla, jolloin erillistä hakunappia ei tarvita. Hakutulokset päivittyvät, kun jokin hakukriteeri muuttuu.' +
+                                'Olen toteuttanut FribaGoon <a href="https://www.fribago.com/search_course.php" target="_blank" class="txt_link">Hae rata</a> -hakukoneen. Se hakee ratoja tietokannasta, jonne sovellukseen syötetyt frisbeegolfradat tallennetaan. Hakukone on toteutettu <span class="accent">jQueryn</span> ja <span class="accent">Ajaxin</span> avulla, jolloin erillistä hakunappia ei tarvita. Hakutulokset päivittyvät, kun jokin hakukriteeri muuttuu.' +
                             '</p>' +
                             '<p class="info_p">' +
                                 'Hakukriteereitä ovat radan nimi, paikkakunta, väylien lukumäärä, väylien kokonaispituus metreinä, vaativuustaso sekä vapaa haku, joka hakee ratoja radan nimen, paikkakunnan sekä radalle annetun kuvaustekstin perusteella. Nämä kaikki on yhdistetty <span class="accent">yhdessä SQL-lauseessa</span>, jolloin jokainen kenttä ja nappi vaikuttaa lopulliseen hakutulokseen.' +

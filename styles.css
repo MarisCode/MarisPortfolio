@@ -145,6 +145,14 @@ h5 {
     width: 40%;
 }
 
+.txt_link {
+    text-decoration: none;
+}
+
+.txt_link:hover {
+    text-shadow: 0 0 3px #F90;
+}
+
 
 /* About me -sivu (index) */
 
