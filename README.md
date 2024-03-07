@@ -12,6 +12,3 @@ The website has been implemented from the beginning with my own hands, without r
 - JavaScript
 
 [Link to the Portfolio page](https://mariscode.github.io/MarisPortfolio/)
-
-<a href="https://mariscode.github.io/MarisPortfolio/" target="_blank">Link to the portfolio page</a>
-
