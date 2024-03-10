@@ -54,7 +54,8 @@ function openPopup(x) {
                             '<h2><a href="https://www.fribago.com" target="_blank" class="txt_link">FribaGon</a> tarina</h2>' +
                             '<p class="info_p">' +
                                 '<a href="https://www.fribago.com" target="_blank" class="txt_link">FribaGo</a>-projekti alkoi keväällä 2023, kun opiskelukaverini kyseli halukkaita frisbeegolf-sovelluksen kehittämiseen. Tarkoituksena oli saada kesälle koodailtavaa tuntuman ylläpitämiseksi. Alkutunnustelujen jälkeen FribaGoa jäi työstämään neljä opiskelijaa, ja työ jatkuu saman tiimin voimin edelleen. Tällä hetkellä FribaGo on <span class="accent">testausvaiheessa</span> muutaman kymmenen lajin harrastajan avustuksella. FribaGo-työryhmä on tiiviisti yhteydessä testiryhmään, ja <span class="accent">sovellusta pyritään parantamaan toiveiden mukaan.</a>' +
-                            '</p>';
+                            '</p>' +
+                            '<p class="info_p">FribaGo-tiimin muut jäsenet: <a href="https://www.linkedin.com/in/antti-mutanen-b72981261/" target="_blank" class="txt_link">Antti Mutanen</a> (idean isä), <a href="https://www.linkedin.com/in/anne-arhipoff/" target="_blank" class="txt_link">Anne Arhipoff</a> ja <a href="https://www.linkedin.com/in/eeva-arhipoff/" target="_blank" class="txt_link">Eeva Arhipoff</a>. Nimeä klikkaamalla pääset tutustumaan LinkedIn-profiiliin.</p>';
         
         var part1 =         '<h2>Päävastuualueeni</h2>' +
                             '<p class="info_p">' +
